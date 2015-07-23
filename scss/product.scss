@@ -1,0 +1,361 @@
+$redtypecolor: #FF0016;
+$leftmenucolor: #FF797B;
+
+.row .right-bar 
+{
+  padding-right: 30px;
+}
+
+.left-side-bar
+{
+  background-color: white;
+  
+  .inner-div
+  {
+    margin-left: 20px;
+    background-color: $redtypecolor;
+    border-right: 12px solid black;
+  }
+
+  .logo
+  {
+    width: 200px;
+    height: 200px;
+    margin-top: 60px;
+  }
+
+  .para
+  {
+    padding: 40px;
+    word-wrap: break-word;
+    color: white;
+
+    & p
+    {
+      font-weight: bold;
+      font-size: 30px;
+    }
+  }
+
+  .side-menu
+  {
+    padding: 15px;
+
+    a
+    {
+      color: black;
+
+      & :hover
+      {
+        color: black;
+      }
+    }
+
+    .menu-item 
+    {
+    background-color: $leftmenucolor;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    }
+
+    & h1, h2, h3,h4, h5, h6
+    {
+      font-size: 22px;
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
+
+
+
+.right-bar
+{
+  
+  .header
+  {
+
+    h1 
+    {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+    }
+
+    .signup, .login
+    {
+      height: 35px;
+      line-height: 1px;
+      background-color: $redtypecolor;
+      font-weight: bold;
+      font-size: 22px;
+    }
+  }
+
+  .search
+  {
+    background-color: black;
+    padding: 10px;
+    height: 50px;
+    margin-top: 40px;
+
+    h1
+    {
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+      float: left;
+    }
+
+    & div { display: table-cell; width: 100%; }
+    & input 
+    { 
+      width: 95%;
+      float: left;
+      margin-left: 20px;
+      margin-right: 20px;
+      height: 30px;
+    }
+
+    & button 
+    {
+      width: 30px;
+      height: 25px;
+      padding: 0px;
+    }
+  }
+
+  .topmenu
+  {
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    ul
+    {
+      list-style: none;
+      display: -webkit-inline-box;
+      display: -moz-inline-box;
+      height: 0px;
+      margin-top: 20px;
+
+      & li
+      {
+        height: 0px;
+        line-height: 0px;
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 10px;
+        padding-top: 10px;
+      }
+
+      li:before 
+      {
+        content: " | ";
+      }
+
+      li:first-child:before 
+      {
+        content: none;
+      }
+
+
+    }
+  }
+
+  .direction
+  {
+    margin-top: 20px;
+
+    h1
+    {
+      font-size: 25px;
+      font-weight: bold;
+    }
+  }
+
+  .product
+  {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-top: 20px;
+
+    .item
+    {
+      padding: 30px;
+      
+      & button.details
+      {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        padding: 2px;
+        margin-top: 20px;
+        border-radius: 10px;
+        width: 80px;
+        height: 22px;
+        font-size: 12px;
+      }
+
+       & button.addtocart
+       {
+          @extend .details;
+       }
+    }
+
+    img.productimg 
+    {
+      width: 100%
+    }
+
+  }
+
+
+  .footer
+  {
+    padding: 0px;
+
+    & img
+    {
+      width: 100px;
+      height: 55px;
+      margin-top: 30px;
+    }
+  }
+
+  .social
+  {
+    padding: 0px;
+
+    h1
+    {
+      font-size: 22px;
+      font-weight: bold;
+      margin-right: 15%;
+    }
+
+    & img
+    {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+}
+
+
+
+
+/*=======================================CSS FOR MEDIUM SCREEN STARTS HERE====================================================*/
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+.left-side-bar
+{ 
+  .inner-div
+  {
+    margin-left: 0px;
+  }
+}
+
+.right-bar 
+{
+  .search input.searchin 
+  {
+      width: 90%;
+  }
+
+  .social
+  {
+    h1
+    {
+      margin-right: 0%;
+      margin-top: 40px;
+    }
+  }
+
+  .product 
+  {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+}
+
+.row .right-bar 
+{
+  padding-right: 20px;
+}
+
+}
+/*=======================================CSS FOR MEDIUM SCREEN ENDS HERE====================================================*/
+
+
+
+
+
+
+
+/*=======================================CSS FOR SMALL SCREEN STARTS HERE====================================================*/
+@media only screen and (max-width: 640px) {
+.left-side-bar
+{
+  
+  .inner-div
+  {
+    margin-left: 0px;
+  }
+}
+
+.right-bar 
+{
+  .search input.searchin 
+  {
+    width: 85%;
+  }
+
+  .content h1 
+  {
+    font-size: 20px;
+  }
+
+  .content p 
+  {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .social
+  {
+    h1
+    {
+      margin-right: 0%;
+      margin-top: 40px;
+    }
+  }
+
+  .product 
+  {
+    padding-right: 0px;
+    padding-left: 0px;
+
+    .item
+    {
+      padding: 20px;
+
+      & button.details
+      {
+        width: 70px;
+        font-size: 10px;
+      }
+    }
+  }
+
+}
+
+
+.row .right-bar 
+{
+  padding-right: 20px;
+}
+
+}
+/*=======================================CSS FOR SMALL SCREEN ENDS HERE====================================================*/

@@ -1,0 +1,270 @@
+/* line 4, ../scss/product.scss */
+.row .right-bar {
+  padding-right: 30px;
+}
+
+/* line 9, ../scss/product.scss */
+.left-side-bar {
+  background-color: white;
+}
+/* line 13, ../scss/product.scss */
+.left-side-bar .inner-div {
+  margin-left: 20px;
+  background-color: #FF0016;
+  border-right: 12px solid black;
+}
+/* line 20, ../scss/product.scss */
+.left-side-bar .logo {
+  width: 200px;
+  height: 200px;
+  margin-top: 60px;
+}
+/* line 27, ../scss/product.scss */
+.left-side-bar .para {
+  padding: 40px;
+  word-wrap: break-word;
+  color: white;
+}
+/* line 33, ../scss/product.scss */
+.left-side-bar .para p {
+  font-weight: bold;
+  font-size: 30px;
+}
+/* line 40, ../scss/product.scss */
+.left-side-bar .side-menu {
+  padding: 15px;
+}
+/* line 44, ../scss/product.scss */
+.left-side-bar .side-menu a {
+  color: black;
+}
+/* line 48, ../scss/product.scss */
+.left-side-bar .side-menu a :hover {
+  color: black;
+}
+/* line 54, ../scss/product.scss */
+.left-side-bar .side-menu .menu-item {
+  background-color: #FF797B;
+  padding: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+/* line 62, ../scss/product.scss */
+.left-side-bar .side-menu h1, .left-side-bar .side-menu h2, .left-side-bar .side-menu h3, .left-side-bar .side-menu h4, .left-side-bar .side-menu h5, .left-side-bar .side-menu h6 {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+}
+
+/* line 79, ../scss/product.scss */
+.right-bar .header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+/* line 86, ../scss/product.scss */
+.right-bar .header .signup, .right-bar .header .login {
+  height: 35px;
+  line-height: 1px;
+  background-color: #FF0016;
+  font-weight: bold;
+  font-size: 22px;
+}
+/* line 96, ../scss/product.scss */
+.right-bar .search {
+  background-color: black;
+  padding: 10px;
+  height: 50px;
+  margin-top: 40px;
+}
+/* line 103, ../scss/product.scss */
+.right-bar .search h1 {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  float: left;
+}
+/* line 111, ../scss/product.scss */
+.right-bar .search div {
+  display: table-cell;
+  width: 100%;
+}
+/* line 112, ../scss/product.scss */
+.right-bar .search input {
+  width: 95%;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 30px;
+}
+/* line 121, ../scss/product.scss */
+.right-bar .search button {
+  width: 30px;
+  height: 25px;
+  padding: 0px;
+}
+/* line 129, ../scss/product.scss */
+.right-bar .topmenu {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+/* line 134, ../scss/product.scss */
+.right-bar .topmenu ul {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  height: 0px;
+  margin-top: 20px;
+}
+/* line 142, ../scss/product.scss */
+.right-bar .topmenu ul li {
+  height: 0px;
+  line-height: 0px;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+/* line 152, ../scss/product.scss */
+.right-bar .topmenu ul li:before {
+  content: " | ";
+}
+/* line 157, ../scss/product.scss */
+.right-bar .topmenu ul li:first-child:before {
+  content: none;
+}
+/* line 166, ../scss/product.scss */
+.right-bar .direction {
+  margin-top: 20px;
+}
+/* line 170, ../scss/product.scss */
+.right-bar .direction h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+/* line 177, ../scss/product.scss */
+.right-bar .product {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-top: 20px;
+}
+/* line 183, ../scss/product.scss */
+.right-bar .product .item {
+  padding: 30px;
+}
+/* line 187, ../scss/product.scss */
+.right-bar .product .item button.details, .right-bar .product .item button.addtocart {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 2px;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 80px;
+  height: 22px;
+  font-size: 12px;
+}
+/* line 206, ../scss/product.scss */
+.right-bar .product img.productimg {
+  width: 100%;
+}
+/* line 214, ../scss/product.scss */
+.right-bar .footer {
+  padding: 0px;
+}
+/* line 218, ../scss/product.scss */
+.right-bar .footer img {
+  width: 100px;
+  height: 55px;
+  margin-top: 30px;
+}
+/* line 226, ../scss/product.scss */
+.right-bar .social {
+  padding: 0px;
+}
+/* line 230, ../scss/product.scss */
+.right-bar .social h1 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 15%;
+}
+/* line 237, ../scss/product.scss */
+.right-bar .social img {
+  width: 40px;
+  height: 40px;
+}
+
+/*=======================================CSS FOR MEDIUM SCREEN STARTS HERE====================================================*/
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  /* line 253, ../scss/product.scss */
+  .left-side-bar .inner-div {
+    margin-left: 0px;
+  }
+
+  /* line 261, ../scss/product.scss */
+  .right-bar .search input.searchin {
+    width: 90%;
+  }
+  /* line 268, ../scss/product.scss */
+  .right-bar .social h1 {
+    margin-right: 0%;
+    margin-top: 40px;
+  }
+  /* line 275, ../scss/product.scss */
+  .right-bar .product {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  /* line 283, ../scss/product.scss */
+  .row .right-bar {
+    padding-right: 20px;
+  }
+}
+/*=======================================CSS FOR MEDIUM SCREEN ENDS HERE====================================================*/
+/*=======================================CSS FOR SMALL SCREEN STARTS HERE====================================================*/
+@media only screen and (max-width: 640px) {
+  /* line 302, ../scss/product.scss */
+  .left-side-bar .inner-div {
+    margin-left: 0px;
+  }
+
+  /* line 310, ../scss/product.scss */
+  .right-bar .search input.searchin {
+    width: 85%;
+  }
+  /* line 315, ../scss/product.scss */
+  .right-bar .content h1 {
+    font-size: 20px;
+  }
+  /* line 320, ../scss/product.scss */
+  .right-bar .content p {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  /* line 328, ../scss/product.scss */
+  .right-bar .social h1 {
+    margin-right: 0%;
+    margin-top: 40px;
+  }
+  /* line 335, ../scss/product.scss */
+  .right-bar .product {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  /* line 340, ../scss/product.scss */
+  .right-bar .product .item {
+    padding: 20px;
+  }
+  /* line 344, ../scss/product.scss */
+  .right-bar .product .item button.details, .right-bar .product .item button.addtocart {
+    width: 70px;
+    font-size: 10px;
+  }
+
+  /* line 355, ../scss/product.scss */
+  .row .right-bar {
+    padding-right: 20px;
+  }
+}
+/*=======================================CSS FOR SMALL SCREEN ENDS HERE====================================================*/
