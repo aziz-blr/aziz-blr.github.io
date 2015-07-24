@@ -357,6 +357,13 @@ $leftmenucolor: #FF797B;
 
 .right-bar 
 {
+  .logo
+  {
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+  }
+
   .search input.searchin 
   {
       width: 90%;
@@ -411,8 +418,7 @@ $leftmenucolor: #FF797B;
 @media only screen and (max-width: 640px) {
 .left-side-bar
 {
-  
-  .inner-div
+    .inner-div
   {
     margin-left: 0px;
     border-right: none;
@@ -421,6 +427,13 @@ $leftmenucolor: #FF797B;
 
 .right-bar 
 {
+  .logo
+  {
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+  }
+  
   .search input.searchin 
   {
     width: 85%;

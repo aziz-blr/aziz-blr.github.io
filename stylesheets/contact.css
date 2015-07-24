@@ -235,16 +235,22 @@
   }
 
   /* line 303, ../scss/contact.scss */
+  .right-bar .logo {
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+  }
+  /* line 310, ../scss/contact.scss */
   .right-bar .search input.searchin {
     width: 90%;
   }
-  /* line 310, ../scss/contact.scss */
+  /* line 317, ../scss/contact.scss */
   .right-bar .social h1 {
     margin-right: 0%;
     margin-top: 40px;
   }
 
-  /* line 320, ../scss/contact.scss */
+  /* line 327, ../scss/contact.scss */
   .row .right-bar {
     padding-right: 20px;
   }
@@ -252,32 +258,38 @@
 /*=======================================CSS FOR MEDIUM SCREEN ENDS HERE====================================================*/
 /*=======================================CSS FOR SMALL SCREEN STARTS HERE====================================================*/
 @media only screen and (max-width: 640px) {
-  /* line 339, ../scss/contact.scss */
+  /* line 346, ../scss/contact.scss */
   .left-side-bar .inner-div {
     margin-left: 0px;
     border-right: none;
   }
 
-  /* line 348, ../scss/contact.scss */
+  /* line 355, ../scss/contact.scss */
+  .right-bar .logo {
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+  }
+  /* line 362, ../scss/contact.scss */
   .right-bar .search input.searchin {
     width: 85%;
   }
-  /* line 353, ../scss/contact.scss */
+  /* line 367, ../scss/contact.scss */
   .right-bar .contact {
     padding-left: 10px;
     padding-right: 10px;
   }
-  /* line 358, ../scss/contact.scss */
+  /* line 372, ../scss/contact.scss */
   .right-bar .contact .lbl {
     font-size: 20px;
   }
-  /* line 366, ../scss/contact.scss */
+  /* line 380, ../scss/contact.scss */
   .right-bar .social h1 {
     margin-right: 0%;
     margin-top: 40px;
   }
 
-  /* line 377, ../scss/contact.scss */
+  /* line 391, ../scss/contact.scss */
   .row .right-bar {
     padding-right: 20px;
   }

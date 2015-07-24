@@ -244,21 +244,27 @@
   }
 
   /* line 314, ../scss/product.scss */
+  .right-bar .logo {
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+  }
+  /* line 321, ../scss/product.scss */
   .right-bar .search input.searchin {
     width: 90%;
   }
-  /* line 321, ../scss/product.scss */
+  /* line 328, ../scss/product.scss */
   .right-bar .social h1 {
     margin-right: 0%;
     margin-top: 40px;
   }
-  /* line 328, ../scss/product.scss */
+  /* line 335, ../scss/product.scss */
   .right-bar .product {
     padding-right: 0px;
     padding-left: 0px;
   }
 
-  /* line 336, ../scss/product.scss */
+  /* line 343, ../scss/product.scss */
   .row .right-bar {
     padding-right: 20px;
   }
@@ -266,46 +272,52 @@
 /*=======================================CSS FOR MEDIUM SCREEN ENDS HERE====================================================*/
 /*=======================================CSS FOR SMALL SCREEN STARTS HERE====================================================*/
 @media only screen and (max-width: 640px) {
-  /* line 355, ../scss/product.scss */
+  /* line 362, ../scss/product.scss */
   .left-side-bar .inner-div {
     margin-left: 0px;
     border-right: none;
   }
 
-  /* line 364, ../scss/product.scss */
+  /* line 371, ../scss/product.scss */
+  .right-bar .logo {
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+  }
+  /* line 378, ../scss/product.scss */
   .right-bar .search input.searchin {
     width: 85%;
   }
-  /* line 369, ../scss/product.scss */
+  /* line 383, ../scss/product.scss */
   .right-bar .content h1 {
     font-size: 20px;
   }
-  /* line 374, ../scss/product.scss */
+  /* line 388, ../scss/product.scss */
   .right-bar .content p {
     font-weight: bold;
     font-size: 18px;
   }
-  /* line 382, ../scss/product.scss */
+  /* line 396, ../scss/product.scss */
   .right-bar .social h1 {
     margin-right: 0%;
     margin-top: 40px;
   }
-  /* line 389, ../scss/product.scss */
+  /* line 403, ../scss/product.scss */
   .right-bar .product {
     padding-right: 0px;
     padding-left: 0px;
   }
-  /* line 394, ../scss/product.scss */
+  /* line 408, ../scss/product.scss */
   .right-bar .product .item {
     padding: 20px;
   }
-  /* line 398, ../scss/product.scss */
+  /* line 412, ../scss/product.scss */
   .right-bar .product .item button.details, .right-bar .product .item button.addtocart {
     width: 70px;
     font-size: 10px;
   }
 
-  /* line 409, ../scss/product.scss */
+  /* line 423, ../scss/product.scss */
   .row .right-bar {
     padding-right: 20px;
   }
