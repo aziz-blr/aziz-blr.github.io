@@ -1,0 +1,355 @@
+$redtypecolor: #FF0016;
+$leftmenucolor: #FF797B;
+
+.row .right-bar 
+{
+  padding-right: 30px;
+}
+
+.left-side-bar
+{
+  background-color: white;
+  
+  .inner-div
+  {
+    margin-left: 20px;
+    background-color: $redtypecolor;
+    border-right: 12px solid black;
+  }
+
+  .logo
+  {
+    width: 200px;
+    height: 200px;
+    margin-top: 60px;
+  }
+
+  .side-menu
+  {
+    padding: 15px;
+
+    a
+    {
+      color: black;
+
+      & :hover
+      {
+        color: black;
+      }
+    }
+
+    .menu-item 
+    {
+    background-color: $leftmenucolor;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    }
+
+     & h1, h2, h3,h4, h5, h6
+    {
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
+
+
+
+.right-bar
+{
+  
+  .header
+  {
+
+    h1 
+    {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+    }
+
+  }
+
+  .search
+  {
+    background-color: black;
+    padding: 10px;
+    height: 50px;
+    margin-top: 40px;
+
+    h1
+    {
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+      float: left;
+    }
+
+    & div { display: table-cell; width: 100%; }
+    & input 
+    { 
+      width: 95%;
+      float: left;
+      margin-left: 20px;
+      margin-right: 20px;
+      height: 30px;
+    }
+
+    & button 
+    {
+      width: 30px;
+      height: 25px;
+      padding: 0px;
+    }
+    
+  }
+
+  .menu
+  {
+    ul li:before 
+    {
+      content: " | ";
+    }
+
+    ul li:first-child:before 
+    {
+    content: none;
+    }
+        
+    nav 
+    {
+      height: 40px;
+      width: 100%;
+      font-weight: bold;
+      position: relative;
+      margin-top: 20px;
+    }
+
+    nav ul 
+    {
+      padding: 0;
+      margin: 0 auto;
+      width: 738px;
+      height: 40px;
+    }
+
+    nav li 
+    {
+      display: inline;
+      float: left;
+    }
+
+    nav a 
+    {
+      width: 100px;
+      text-align: center;
+      text-decoration: none;
+      line-height: 40px;
+    }
+
+    nav li a 
+    {
+      box-sizing:border-box;
+      -moz-box-sizing:border-box;
+      -webkit-box-sizing:border-box;
+      color: black;
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 17px;
+    }
+
+    nav a:hover, nav a:active 
+    {
+      color: black;
+    }
+
+  }
+  
+   .direction
+  {
+    margin-top: 20px;
+    
+    h1
+    {
+      font-size: 25px;
+      font-weight: bold;
+    }
+  }
+
+   .contact
+  {
+    margin-top: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
+
+    & h1
+    {
+      font-weight: bold;
+      color: #999A99;
+      height: 100px;
+    }
+
+    .lbl
+    {
+      font-weight: bold;
+      font-size: 23px;
+      color: black;
+      line-height: 15px;
+    }
+
+    .field
+    {
+      height: 85px;
+    }
+
+    button.submit
+    {
+      background-color: black;
+      height: 40px;
+      font-weight: bold;
+      line-height: 0;
+      margin-top: 50px;
+    }
+
+    input.txt
+    {
+      background-color: #DFDFDF;
+      height: 30px;
+    }
+  }
+
+
+  .footer
+  {
+    padding: 0px;
+
+    & img
+    {
+      width: 100px;
+      height: 55px;
+      margin-top: 30px;
+    }
+  }
+
+  .social
+  {
+    padding: 0px;
+
+    h1
+    {
+      font-size: 22px;
+      font-weight: bold;
+      margin-right: 15%;
+    }
+
+    & img
+    {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+ 
+        
+  
+}
+
+
+
+/*=======================================CSS FOR MEDIUM SCREEN STARTS HERE====================================================*/
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+.left-side-bar
+{
+  
+  .inner-div
+  {
+    margin-left: 0px;
+    border-right: none;
+  }
+}
+
+.right-bar 
+{
+  .search input.searchin 
+  {
+      width: 90%;
+  }
+
+  .social
+  {
+    h1
+    {
+      margin-right: 0%;
+      margin-top: 40px;
+    }
+  }
+
+}
+
+
+.row .right-bar 
+{
+  padding-right: 20px;
+}
+
+}
+/*=======================================CSS FOR MEDIUM SCREEN ENDS HERE====================================================*/
+
+
+
+
+
+
+
+/*=======================================CSS FOR SMALL SCREEN STARTS HERE====================================================*/
+@media only screen and (max-width: 640px) {
+.left-side-bar
+{
+  
+  .inner-div
+  {
+    margin-left: 0px;
+    border-right: none;
+  }
+}
+
+.right-bar 
+{
+  .search input.searchin 
+  {
+    width: 85%;
+  }
+
+  .contact
+  {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .lbl
+    {
+      font-size: 20px;
+    }
+  }
+
+  .social
+  {
+    h1
+    {
+      margin-right: 0%;
+      margin-top: 40px;
+    }
+  }
+
+
+}
+
+
+.row .right-bar 
+{
+  padding-right: 20px;
+}
+
+}
+/*=======================================CSS FOR SMALL SCREEN ENDS HERE====================================================*/
