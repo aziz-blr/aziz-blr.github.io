@@ -5,6 +5,33 @@ $leftmenucolor: #FF797B;
 {
   padding-right: 30px;
 }
+.offcanvasrightmenu
+{
+  .side-menu
+  {
+    padding: 15px;
+
+    a
+    {
+      color: black;
+
+      & :hover
+      {
+        color: black;
+      }
+    }
+
+    .menu-item 
+    {
+    background-color: $leftmenucolor;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+    }
+  }
+}
 
 .left-side-bar
 {

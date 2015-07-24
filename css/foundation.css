@@ -4768,7 +4768,7 @@ blockquote p {
 
 .right-off-canvas-menu {
   -webkit-backface-visibility: hidden;
-  background: #333333;
+  background: #FF0016;
   bottom: 0;
   box-sizing: content-box;
   -webkit-overflow-scrolling: touch;
@@ -4786,7 +4786,9 @@ blockquote p {
   -ms-transform: translate3d(100%, 0, 0);
   -o-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
-  right: 0; }
+  right: 0; 
+  border-left: 12px solid;
+}
   .right-off-canvas-menu * {
     -webkit-backface-visibility: hidden; }
 
