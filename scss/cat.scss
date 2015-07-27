@@ -135,6 +135,8 @@ $leftmenucolor: #FF797B;
 
   .menu
   {
+    padding: 0px;
+    
     ul li:before 
     {
       content: " | ";
@@ -158,7 +160,7 @@ $leftmenucolor: #FF797B;
     {
       padding: 0;
       margin: 0 auto;
-      width: 738px;
+      width: 760px;
       height: 40px;
     }
 
@@ -241,7 +243,7 @@ $leftmenucolor: #FF797B;
       font-size: 20px;
     }
 
-    button.retail
+    a.retail
     {
       background-color: black;
       color: white;
@@ -251,14 +253,15 @@ $leftmenucolor: #FF797B;
       width: 130px;
       height: 30px;
       font-size: 18px;
+      text-align: center;
     }
 
-    button.sale
+    & a.sale
     {
       @extend .retail;
     }
 
-     button.addtocart
+    & a.addtocart
     {
       @extend .retail;
       background-color: $redtypecolor;

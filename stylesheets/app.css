@@ -119,15 +119,19 @@
   height: 25px;
   padding: 0px;
 }
-/* line 152, ../scss/app.scss */
+/* line 150, ../scss/app.scss */
+.right-bar .menu {
+  padding: 0px;
+}
+/* line 154, ../scss/app.scss */
 .right-bar .menu ul li:before {
   content: " | ";
 }
-/* line 157, ../scss/app.scss */
+/* line 159, ../scss/app.scss */
 .right-bar .menu ul li:first-child:before {
   content: none;
 }
-/* line 162, ../scss/app.scss */
+/* line 164, ../scss/app.scss */
 .right-bar .menu nav {
   height: 40px;
   width: 100%;
@@ -135,26 +139,26 @@
   position: relative;
   margin-top: 20px;
 }
-/* line 171, ../scss/app.scss */
+/* line 173, ../scss/app.scss */
 .right-bar .menu nav ul {
   padding: 0;
   margin: 0 auto;
-  width: 738px;
+  width: 760px;
   height: 40px;
 }
-/* line 179, ../scss/app.scss */
+/* line 181, ../scss/app.scss */
 .right-bar .menu nav li {
   display: inline;
   float: left;
 }
-/* line 185, ../scss/app.scss */
+/* line 187, ../scss/app.scss */
 .right-bar .menu nav a {
   width: 100px;
   text-align: center;
   text-decoration: none;
   line-height: 40px;
 }
-/* line 193, ../scss/app.scss */
+/* line 195, ../scss/app.scss */
 .right-bar .menu nav li a {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -164,67 +168,71 @@
   padding-right: 5px;
   font-size: 17px;
 }
-/* line 204, ../scss/app.scss */
+/* line 206, ../scss/app.scss */
 .right-bar .menu nav a:hover, .right-bar .menu nav a:active {
   color: black;
 }
-/* line 212, ../scss/app.scss */
+/* line 214, ../scss/app.scss */
 .right-bar .slider {
   margin-top: 20px;
 }
-/* line 217, ../scss/app.scss */
+/* line 219, ../scss/app.scss */
 .right-bar .slider img {
   width: 100%;
   border-top: 12px solid #FF0016;
   border-bottom: 12px solid #FF0016;
 }
-/* line 225, ../scss/app.scss */
+/* line 227, ../scss/app.scss */
 .right-bar .content {
   word-wrap: break-word;
   margin-bottom: 60px;
 }
-/* line 230, ../scss/app.scss */
+/* line 232, ../scss/app.scss */
 .right-bar .content h1 {
   font-size: 35px;
   color: #662527;
   font-weight: bold;
   margin-top: 20px;
 }
-/* line 238, ../scss/app.scss */
+/* line 240, ../scss/app.scss */
 .right-bar .content p {
   font-weight: bold;
   font-size: 25px;
 }
-/* line 245, ../scss/app.scss */
+/* line 247, ../scss/app.scss */
 .right-bar .newarrival {
   background-color: black;
   padding: 0px;
 }
-/* line 250, ../scss/app.scss */
+/* line 252, ../scss/app.scss */
 .right-bar .newarrival .hdecoration, .right-bar .newarrival h1, .right-bar .newarrival h2 {
   color: white;
   font-size: 20px;
   font-weight: bold;
 }
-/* line 257, ../scss/app.scss */
+/* line 259, ../scss/app.scss */
 .right-bar .newarrival h1 {
   padding: 10px;
 }
-/* line 263, ../scss/app.scss */
+/* line 265, ../scss/app.scss */
 .right-bar .newarrival h2 {
   padding-left: 10px;
   padding-top: 10px;
 }
-/* line 270, ../scss/app.scss */
+/* line 272, ../scss/app.scss */
 .right-bar .newarrival img {
   width: 100%;
 }
-/* line 277, ../scss/app.scss */
+/* line 279, ../scss/app.scss */
 .right-bar .product {
   padding-right: 0px;
 }
-/* line 284, ../scss/app.scss */
-.right-bar .product .item button.details, .right-bar .product .item button.addtocart {
+/* line 283, ../scss/app.scss */
+.right-bar .product .item {
+  padding-bottom: 40px;
+}
+/* line 287, ../scss/app.scss */
+.right-bar .product .item a.details, .right-bar .product .item a.addtocart {
   background-color: black;
   color: white;
   font-weight: bold;
@@ -235,31 +243,31 @@
   height: 22px;
   font-size: 12px;
 }
-/* line 303, ../scss/app.scss */
+/* line 306, ../scss/app.scss */
 .right-bar .product img.productimg {
   width: 100%;
 }
-/* line 311, ../scss/app.scss */
+/* line 314, ../scss/app.scss */
 .right-bar .footer {
   padding: 0px;
 }
-/* line 315, ../scss/app.scss */
+/* line 318, ../scss/app.scss */
 .right-bar .footer img {
   width: 90px;
   height: 50px;
   margin-top: 30px;
 }
-/* line 323, ../scss/app.scss */
+/* line 326, ../scss/app.scss */
 .right-bar .social {
   padding: 0px;
 }
-/* line 327, ../scss/app.scss */
+/* line 330, ../scss/app.scss */
 .right-bar .social h1 {
   font-size: 22px;
   font-weight: bold;
   margin-right: 15%;
 }
-/* line 334, ../scss/app.scss */
+/* line 337, ../scss/app.scss */
 .right-bar .social img {
   width: 40px;
   height: 40px;
@@ -267,42 +275,42 @@
 
 /*=======================================CSS FOR MEDIUM SCREEN STARTS HERE====================================================*/
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
-  /* line 351, ../scss/app.scss */
+  /* line 354, ../scss/app.scss */
   .left-side-bar .inner-div {
     margin-left: 0px;
     border-right: none;
   }
 
-  /* line 360, ../scss/app.scss */
+  /* line 363, ../scss/app.scss */
   .right-bar .logo {
     width: 200px;
     height: 200px;
     margin-top: 40px;
   }
-  /* line 367, ../scss/app.scss */
+  /* line 370, ../scss/app.scss */
   .right-bar .search input.searchin {
     width: 90%;
   }
-  /* line 374, ../scss/app.scss */
+  /* line 377, ../scss/app.scss */
   .right-bar .social h1 {
     margin-right: 0%;
     margin-top: 40px;
   }
-  /* line 383, ../scss/app.scss */
+  /* line 386, ../scss/app.scss */
   .right-bar .newarrival img {
     width: 60%;
   }
-  /* line 389, ../scss/app.scss */
+  /* line 392, ../scss/app.scss */
   .right-bar .product {
     padding-right: 0px;
     padding-left: 0px;
   }
-  /* line 394, ../scss/app.scss */
+  /* line 397, ../scss/app.scss */
   .right-bar .product .grid {
     margin-top: 40px;
   }
 
-  /* line 403, ../scss/app.scss */
+  /* line 406, ../scss/app.scss */
   .row .right-bar {
     padding-right: 20px;
   }
@@ -310,52 +318,52 @@
 /*=======================================CSS FOR MEDIUM SCREEN ENDS HERE====================================================*/
 /*=======================================CSS FOR SMALL SCREEN STARTS HERE====================================================*/
 @media only screen and (max-width: 640px) {
-  /* line 421, ../scss/app.scss */
+  /* line 424, ../scss/app.scss */
   .left-side-bar .inner-div {
     margin-left: 0px;
     border-right: none;
   }
 
-  /* line 430, ../scss/app.scss */
+  /* line 433, ../scss/app.scss */
   .right-bar .logo {
     width: 200px;
     height: 200px;
     margin-top: 40px;
   }
-  /* line 437, ../scss/app.scss */
+  /* line 440, ../scss/app.scss */
   .right-bar .search input.searchin {
     width: 85%;
   }
-  /* line 442, ../scss/app.scss */
+  /* line 445, ../scss/app.scss */
   .right-bar .content h1 {
     font-size: 20px;
   }
-  /* line 447, ../scss/app.scss */
+  /* line 450, ../scss/app.scss */
   .right-bar .content p {
     font-weight: bold;
     font-size: 18px;
   }
-  /* line 455, ../scss/app.scss */
+  /* line 458, ../scss/app.scss */
   .right-bar .social h1 {
     margin-right: 0%;
     margin-top: 40px;
   }
-  /* line 462, ../scss/app.scss */
+  /* line 465, ../scss/app.scss */
   .right-bar .product {
     padding-right: 0px;
     padding-left: 0px;
   }
-  /* line 467, ../scss/app.scss */
+  /* line 470, ../scss/app.scss */
   .right-bar .product .grid {
     margin-top: 40px;
   }
-  /* line 474, ../scss/app.scss */
-  .right-bar .product .item button.details, .right-bar .product .item button.addtocart {
+  /* line 477, ../scss/app.scss */
+  .right-bar .product .item button.details {
     width: 70px;
     font-size: 10px;
   }
 
-  /* line 485, ../scss/app.scss */
+  /* line 488, ../scss/app.scss */
   .row .right-bar {
     padding-right: 20px;
   }

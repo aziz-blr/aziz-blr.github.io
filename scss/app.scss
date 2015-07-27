@@ -149,6 +149,8 @@ $leftmenucolor: #FF797B;
 
   .menu
   {
+    padding: 0px;
+    
     ul li:before 
     {
       content: " | ";
@@ -172,7 +174,7 @@ $leftmenucolor: #FF797B;
     {
       padding: 0;
       margin: 0 auto;
-      width: 738px;
+      width: 760px;
       height: 40px;
     }
 
@@ -280,8 +282,9 @@ $leftmenucolor: #FF797B;
 
     .item
     {
-      
-      & button.details
+      padding-bottom: 40px;
+
+      & a.details
       {
         background-color: black;
         color: white;
@@ -294,7 +297,7 @@ $leftmenucolor: #FF797B;
         font-size: 12px;
       }
 
-       & button.addtocart
+       & a.addtocart
        {
           @extend .details;
        }

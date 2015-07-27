@@ -57,10 +57,10 @@
                 <br/><br/>
                 <div class="menu-item"> <a href="index.html"> HOME </a></div> <br/><br/>
                 <div class="menu-item"> <a href="product.html"> JAPANESE TEAS </a></div> <br/><br/>
-                <div class="menu-item"> <a href="cat.html"> JAPANESE POTTERY </a></div> <br/><br/>
-                <div class="menu-item"> <a href="contact.html"> JAPANESE ARTS </a></div> <br/><br/>
-                <div class="menu-item"> <a href="#"> SHOPPING CART </a></div> <br/><br/>
-                <div class="menu-item"> <a href="#"> CONTACT US </a></div> <br/><br/>
+                <div class="menu-item"> <a href="#"> JAPANESE POTTERY </a></div> <br/><br/>
+                <div class="menu-item"> <a href="#"> JAPANESE KNIVES </a></div> <br/><br/>
+                <div class="menu-item"> <a href="cat.html"> SHOPPING CART </a></div> <br/><br/>
+                <div class="menu-item"> <a href="contact.html"> CONTACT US </a></div> <br/><br/>
           </div>
         </aside>
 
@@ -91,10 +91,10 @@
             <br/><br/>
             
             <div class="side-menu">
-                <div class="menu-item"> <a href="#"> SHOPING CART     </a> </div> <br/><br/>
+                <div class="menu-item"> <a href="#"> HOME     </a> </div> <br/><br/>
                 <div class="menu-item"> <a href="#"> JAPANESE TEAS    </a> </div> <br/><br/>
                 <div class="menu-item"> <a href="#"> JAPANESE POTTERY </a> </div> <br/><br/>
-                <div class="menu-item"> <a href="#"> JAPANESE ARTS    </a> </div> <br/><br/>
+                <div class="menu-item"> <a href="#"> JAPANESE KNIVES    </a> </div> <br/><br/>
                 <div class="menu-item"> <a href="#"> SHOPPING CART    </a> </div> <br/><br/><br/>
                 <br/><br/><br/><br/><br/>
                 <div> <img src="images/chat.png"> </div> <br/><br/><br/>
@@ -113,7 +113,7 @@
           <div class="large-12 columns">
               <div class="header text-center large-only-text-right">
                 <div class="hide-for-large-only"> <img class="logo" src="images/logo.png"> </div>
-                <h1> Call : 800-222-4444</h1> <br/>
+                <a href="#"> <h1> Call : 800-222-4444</h1> </a> <br/>
               </div>
           </div>
         </div>
@@ -137,10 +137,10 @@
                   <ul>
                     <li><a href="index.html"> Home </a></li>
                     <li><a href="product.html"> Japanese Teas </a></li>
-                    <li><a href="cat.html"> Japanese Pottery </a></li>
-                    <li><a href="contact.html"> Japanese Arts </a></li>
-                    <li><a href="#"> Shopping Cart </a></li>
-                    <li><a href="#"> Contact Us </a></li>  
+                    <li><a href="#"> Japanese Pottery </a></li>
+                    <li><a href="#"> Japanese Knives </a></li>
+                    <li><a href="cat.html"> Shopping Cart </a></li>
+                    <li><a href="contact.html"> Contact Us </a></li>  
                   </ul>
               </nav>
           </div>  
@@ -157,7 +157,7 @@
         <div class="row">
           <div class="large-12 columns contact">
                
-
+              <form method="post" action="contact.php">
                 <div class="row">
                   <div class="large-12 columns text-center">
                       <h1> CONTACT US </h1>
@@ -240,7 +240,7 @@
 
                 <div class="row">
                   <div class="large-12 columns text-center field">
-                      <button class="submit" type="button"> Submit </button>
+                      <button class="submit" type="submit" name="submit"> Submit </button>
                   </div>
                 </div>
 
@@ -250,6 +250,49 @@
                   </div>
                 </div>
 
+              </form>
+              <?php
+
+                  if(isset($_POST['submit']))
+                    {
+                    
+                      $host="localhost";      // Host name 
+                      $username="root";       // Mysql username 
+                      $password="percoyo$123";  // Mysql password 
+                      $db_name="";     // Database name 
+                      $tbl_name="contact";       // Table name 
+
+                      // Connect to server and select database.
+                      mysql_connect($host, $username, $password)or die("cannot connect"); 
+                      mysql_select_db("$db_name")or die("cannot select DB");
+
+                      // Get values from form
+                      $name = mysql_real_escape_string($_POST['name']); 
+                      $email = mysql_real_escape_string($_POST['email']);
+                      $address = mysql_real_escape_string($_POST['address']);
+                      $city = mysql_real_escape_string($_POST['city']);
+                      $state = mysql_real_escape_string($_POST['state']);
+                      $zipcode = mysql_real_escape_string($_POST['zipcode']);
+                      $phoneno = mysql_real_escape_string($_POST['phoneno']);
+
+                      // Insert data into mysql 
+                      $sql="INSERT INTO $tbl_name (name, email, address, city, state, zipcode, phoneno)
+                      VALUES('$name', '$email', '$address','$city','$state','$zipcode','$phoneno')";
+                      
+                      $result=mysql_query($sql);
+                      mysql_close();
+                      
+
+                      // if successfully insert data into database, displays message "Successful". 
+                      if($result)
+                      {
+                          echo "";
+                      }
+                      else {}
+                      
+                      header('Location:'.$_SERVER['PHP_SELF']);
+                    }
+                  ?> 
             </div>
         </div>
         

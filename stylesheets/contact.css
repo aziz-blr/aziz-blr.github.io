@@ -106,15 +106,19 @@
   height: 25px;
   padding: 0px;
 }
-/* line 139, ../scss/contact.scss */
+/* line 137, ../scss/contact.scss */
+.right-bar .menu {
+  padding: 0px;
+}
+/* line 141, ../scss/contact.scss */
 .right-bar .menu ul li:before {
   content: " | ";
 }
-/* line 144, ../scss/contact.scss */
+/* line 146, ../scss/contact.scss */
 .right-bar .menu ul li:first-child:before {
   content: none;
 }
-/* line 149, ../scss/contact.scss */
+/* line 151, ../scss/contact.scss */
 .right-bar .menu nav {
   height: 40px;
   width: 100%;
@@ -122,26 +126,26 @@
   position: relative;
   margin-top: 20px;
 }
-/* line 158, ../scss/contact.scss */
+/* line 160, ../scss/contact.scss */
 .right-bar .menu nav ul {
   padding: 0;
   margin: 0 auto;
-  width: 738px;
+  width: 760px;
   height: 40px;
 }
-/* line 166, ../scss/contact.scss */
+/* line 168, ../scss/contact.scss */
 .right-bar .menu nav li {
   display: inline;
   float: left;
 }
-/* line 172, ../scss/contact.scss */
+/* line 174, ../scss/contact.scss */
 .right-bar .menu nav a {
   width: 100px;
   text-align: center;
   text-decoration: none;
   line-height: 40px;
 }
-/* line 180, ../scss/contact.scss */
+/* line 182, ../scss/contact.scss */
 .right-bar .menu nav li a {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -151,43 +155,43 @@
   padding-right: 5px;
   font-size: 17px;
 }
-/* line 191, ../scss/contact.scss */
+/* line 193, ../scss/contact.scss */
 .right-bar .menu nav a:hover, .right-bar .menu nav a:active {
   color: black;
 }
-/* line 198, ../scss/contact.scss */
+/* line 200, ../scss/contact.scss */
 .right-bar .direction {
   margin-top: 20px;
 }
-/* line 202, ../scss/contact.scss */
+/* line 204, ../scss/contact.scss */
 .right-bar .direction h1 {
   font-size: 25px;
   font-weight: bold;
 }
-/* line 209, ../scss/contact.scss */
+/* line 211, ../scss/contact.scss */
 .right-bar .contact {
   margin-top: 50px;
   padding-left: 75px;
   padding-right: 75px;
 }
-/* line 215, ../scss/contact.scss */
+/* line 217, ../scss/contact.scss */
 .right-bar .contact h1 {
   font-weight: bold;
   color: #999A99;
   height: 100px;
 }
-/* line 222, ../scss/contact.scss */
+/* line 224, ../scss/contact.scss */
 .right-bar .contact .lbl {
   font-weight: bold;
   font-size: 23px;
   color: black;
   line-height: 15px;
 }
-/* line 230, ../scss/contact.scss */
+/* line 232, ../scss/contact.scss */
 .right-bar .contact .field {
   height: 85px;
 }
-/* line 235, ../scss/contact.scss */
+/* line 237, ../scss/contact.scss */
 .right-bar .contact button.submit {
   background-color: black;
   height: 40px;
@@ -195,32 +199,32 @@
   line-height: 0;
   margin-top: 50px;
 }
-/* line 244, ../scss/contact.scss */
+/* line 246, ../scss/contact.scss */
 .right-bar .contact input.txt {
   background-color: #DFDFDF;
   height: 30px;
 }
-/* line 252, ../scss/contact.scss */
+/* line 254, ../scss/contact.scss */
 .right-bar .footer {
   padding: 0px;
 }
-/* line 256, ../scss/contact.scss */
+/* line 258, ../scss/contact.scss */
 .right-bar .footer img {
   width: 90px;
   height: 50px;
   margin-top: 30px;
 }
-/* line 264, ../scss/contact.scss */
+/* line 266, ../scss/contact.scss */
 .right-bar .social {
   padding: 0px;
 }
-/* line 268, ../scss/contact.scss */
+/* line 270, ../scss/contact.scss */
 .right-bar .social h1 {
   font-size: 22px;
   font-weight: bold;
   margin-right: 15%;
 }
-/* line 275, ../scss/contact.scss */
+/* line 277, ../scss/contact.scss */
 .right-bar .social img {
   width: 40px;
   height: 40px;
@@ -228,29 +232,29 @@
 
 /*=======================================CSS FOR MEDIUM SCREEN STARTS HERE====================================================*/
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
-  /* line 294, ../scss/contact.scss */
+  /* line 296, ../scss/contact.scss */
   .left-side-bar .inner-div {
     margin-left: 0px;
     border-right: none;
   }
 
-  /* line 303, ../scss/contact.scss */
+  /* line 305, ../scss/contact.scss */
   .right-bar .logo {
     width: 200px;
     height: 200px;
     margin-top: 40px;
   }
-  /* line 310, ../scss/contact.scss */
+  /* line 312, ../scss/contact.scss */
   .right-bar .search input.searchin {
     width: 90%;
   }
-  /* line 317, ../scss/contact.scss */
+  /* line 319, ../scss/contact.scss */
   .right-bar .social h1 {
     margin-right: 0%;
     margin-top: 40px;
   }
 
-  /* line 327, ../scss/contact.scss */
+  /* line 329, ../scss/contact.scss */
   .row .right-bar {
     padding-right: 20px;
   }
@@ -258,38 +262,38 @@
 /*=======================================CSS FOR MEDIUM SCREEN ENDS HERE====================================================*/
 /*=======================================CSS FOR SMALL SCREEN STARTS HERE====================================================*/
 @media only screen and (max-width: 640px) {
-  /* line 346, ../scss/contact.scss */
+  /* line 348, ../scss/contact.scss */
   .left-side-bar .inner-div {
     margin-left: 0px;
     border-right: none;
   }
 
-  /* line 355, ../scss/contact.scss */
+  /* line 357, ../scss/contact.scss */
   .right-bar .logo {
     width: 200px;
     height: 200px;
     margin-top: 40px;
   }
-  /* line 362, ../scss/contact.scss */
+  /* line 364, ../scss/contact.scss */
   .right-bar .search input.searchin {
     width: 85%;
   }
-  /* line 367, ../scss/contact.scss */
+  /* line 369, ../scss/contact.scss */
   .right-bar .contact {
     padding-left: 10px;
     padding-right: 10px;
   }
-  /* line 372, ../scss/contact.scss */
+  /* line 374, ../scss/contact.scss */
   .right-bar .contact .lbl {
     font-size: 20px;
   }
-  /* line 380, ../scss/contact.scss */
+  /* line 382, ../scss/contact.scss */
   .right-bar .social h1 {
     margin-right: 0%;
     margin-top: 40px;
   }
 
-  /* line 391, ../scss/contact.scss */
+  /* line 393, ../scss/contact.scss */
   .row .right-bar {
     padding-right: 20px;
   }
