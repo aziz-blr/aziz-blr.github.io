@@ -7,12 +7,26 @@
 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
 <link rel="stylesheet" href="css/style.css">
 
+<!-- REQUIRED SCRIPTS -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+<script type="text/javascript">     
+    jQuery(document).ready(function(){
+        jQuery("#more").click(function(){
+            jQuery("#footernav2").slideToggle();
+    });    
+});
+</script>
+
 </head>
 </head>
 <body>
 
 
-<div data-role="page">
+<div data-role="page" id="profile">
+
+  <div id="loader"></div>
   
   <!-- HEADER -->
   <div data-role="header" data-position="fixed">
@@ -79,17 +93,12 @@
 
 </div>
 
-<!-- REQUIRED SCRIPTS -->
-<script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/jquery.mobile-1.4.5.min.js"></script>
-<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
-
-<script type="text/javascript">     
-    jQuery(document).ready(function(){
-        jQuery("#more").click(function(){
-            jQuery("#footernav2").slideToggle();
-    });      
-});
+<script type="text/javascript">
+  $(window).load(function() {
+      $("#loader").animate({
+        top: -200
+      }, 1500);
+    });
 </script>
 
 </body>
