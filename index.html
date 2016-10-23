@@ -12,6 +12,7 @@
     background-color: transparent !important;
     border-color: transparent !important;
 }
+</style>
 
 </head>
 </head>
@@ -30,22 +31,22 @@
       <fieldset class="ui-field-contain">
         
         <div class="user one" align="center">
-          <img id="img" src="images/login.png" width="100px" height="100px" alt="Logo">
+          <a href="home.html" data-ajax="false"><img id="img" src="images/login.png" width="100px" height="100px" alt="Logo"></a>
         </div>
         
         <div class="input_block">
            <label for="email">E-mail :</label>
-           <input type="email" name="email" id="email" data-clear-btn="true" value="user@gmail.com" placeholder="Your email">
+           <input type="email" name="email" id="email" data-clear-btn="true" placeholder="Your email" value="admin@admin.com">
         </div>
         <div class="input_block">
           <label for="password">Password :</label>
-          <input type="password" name="password" id="password" data-clear-btn="true" value="12345" placeholder="Your password">
+          <input type="password" name="password" id="password" data-clear-btn="true" placeholder="Your password" value="admin">
         </div>
         <div>
           <a href="#" class="forgotpass">Forgot Password ?</a>
         </div>
         <div class="input_block">
-          <a href="home.html" class="ui-btn ui-corner-all ui-shadow" style="font-weight: bold !important;">LogIn</a>
+          <input type="submit" value="LOGIN" id="btn_login">
         </div>
    
       </fieldset>
@@ -53,8 +54,8 @@
   </div>
 
   <!-- FOOTER -->
-  <div data-role="footer" data-position="fixed">
-    <h1>Mandsaur (M.P)</h1>
+  <div data-role="footer" data-position="fixed" class="indexfooter">
+    <h1>&copy; 2016 All rights reserved</h1>
   </div>
 
 </div>
