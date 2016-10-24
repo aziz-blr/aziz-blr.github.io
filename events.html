@@ -2,10 +2,13 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="mobile-web-app-capable" content="yes">
+
 <!-- REQUIRED LINKS -->
 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
 <link rel="stylesheet" href="css/style.css">
+<!-- REQUIRED SCRIPTS -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
 
 </head>
 </head>
@@ -17,7 +20,7 @@
   <!-- HEADER -->
   <div data-role="header" data-position="fixed">
       <h1>Events</h1>
-    <a href="index.html" data-ajax="false" class="ui-btn ui-btn-right ui-corner-all ui-icon-action ui-btn-icon-notext"></a>
+    <a href="index.html" data-ajax="true" class="ui-btn ui-btn-right ui-corner-all ui-icon-action ui-btn-icon-notext"></a>
   </div>
 
   <!-- MEIN BODY -->
@@ -84,38 +87,28 @@
   <div data-role="footer" data-position="fixed">
     <div data-role="navbar">
       <ul>
-        <li><a href="home.html"  data-icon="home" data-ajax="false">Home</a></li>
-        <li><a href="profile.html" data-icon="user" data-ajax="false">Profile</a></li>
-        <li><a href="thalistatus.html" data-icon="power" data-ajax="false">Status</a></li>
-        <li><a href="thalimenu.html" data-icon="bars" data-ajax="false">Menu</a></li>
-        <li id="more"><a href="#" data-icon="plus" data-ajax="false">More</a></li>
+        <li><a href="home.html"  data-icon="home" data-ajax="true">Home</a></li>
+        <li><a href="profile.html" data-icon="user" data-ajax="true">Profile</a></li>
+        <li><a href="thalistatus.html" data-icon="power" data-ajax="true">Status</a></li>
+        <li><a href="thalimenu.html" data-icon="bars" data-ajax="true">Menu</a></li>
+        <li id="eventmore"><a href="#" data-icon="plus" data-ajax="true">More</a></li>
       </ul>
     </div>
 
-    <div data-role="navbar" id="footernav2" style="border-top: 1px solid #ddd;">
+    <div data-role="navbar" id="eventsmenutoggle" style="border-top: 1px solid #ddd;">
       <ul>
-        <li><a href="events.html" class="ui-btn-active" data-icon="star" data-ajax="false">Events</a></li>
-        <li><a href="dailyupdates.html" data-icon="clock" data-ajax="false">Updates</a></li>
-        <li><a href="faizinfo.html" data-icon="info" data-ajax="false">Faiz Info</a></li>
+        <li><a href="events.html" class="ui-btn-active" data-icon="star" data-ajax="true">Events</a></li>
+        <li><a href="dailyupdates.html" data-icon="clock" data-ajax="true">Updates</a></li>
+        <li><a href="faizinfo.html" data-icon="info" data-ajax="true">Faiz Info</a></li>
       </ul>
     </div>
   </div>
 
+  <script> $("#eventmore").click(function(){ $("#eventsmenutoggle").slideToggle(); }); </script>
+
 </div>
 
-<!-- REQUIRED SCRIPTS -->
-<script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/jquery.mobile-1.4.5.min.js"></script>
-<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
-
-<script type="text/javascript">     
-    jQuery(document).ready(function(){
-        jQuery("#more").click(function(){
-            jQuery("#footernav2").slideToggle();
-    });      
-});
 </script>
-
 </body>
 </html>
 
