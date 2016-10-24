@@ -78,6 +78,11 @@ tr:nth-child(odd) {
   transform: translate(-50%, -50%);
   width: 55vh;
 }
+.ui-listview>li p {
+    white-space: initial !important;
+    line-height: 16px;
+    text-align: justify;
+}
 /*********** USER INTERNAL PAGE ****************/
 
 @media (min-width: 320px) and (max-width: 480px) { 
