@@ -40,19 +40,6 @@ tr:nth-child(odd) {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.custom-size-flipswitch.ui-flipswitch .ui-btn.ui-flipswitch-on {
-    text-indent: -4em;
-}
-.custom-size-flipswitch.ui-flipswitch .ui-flipswitch-off {
-    text-indent: 2em;
-}
-.custom-size-flipswitch.ui-flipswitch {
-    width: 8.875em;
-}
-.custom-size-flipswitch.ui-flipswitch.ui-flipswitch-active {
-    padding-left: 7em;
-    width: 1.875em;
-}
 .ui-header .ui-title {
     font-size: 1em;
     font-weight: bold;

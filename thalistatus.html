@@ -27,9 +27,13 @@
   <div data-role="main" class="ui-content">
     <div class="switch">
       <h3>Your Thali status is</h3>
-      <h2>" ON "</h2>
+      <h2>" <span id="togshow">ON</span> "</h2>
       <form action="" method="post" autocomplete="off">
-        <input type="checkbox" data-role="flipswitch" name="flip-checkbox-3" id="flip-checkbox-3" data-on-text="ON" data-off-text="OFF" data-wrapper-class="custom-size-flipswitch" checked>
+       <!--  <input type="checkbox" data-role="flipswitch" name="flip-checkbox-3" id="flip-checkbox-3" data-on-text="ON" data-off-text="OFF" data-wrapper-class="custom-size-flipswitch" checked> -->
+       <select name="toggle" id="toggle" data-role="slider">
+          <option value="OFF">Off</option>
+          <option value="ON" selected="selected">On</option>
+      </select>
       </form>
     </div>  
   </div>
@@ -56,6 +60,12 @@
   </div>
 
   <script> $("#statusmore").click(function(){ $("#statusmenutoggle").slideToggle(); }); </script>
+  <script type="text/javascript">
+    $("#toggle").change(function() {
+      state = $("#toggle").val();
+      $('#togshow').text(state.toString());
+  });
+  </script>
 
 </div>
 
