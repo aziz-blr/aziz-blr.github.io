@@ -1,7 +1,7 @@
 'use strict';
 
-//var GCM_ENDPOINT = 'https://android.googleapis.com/gcm/send';
-var GCM_ENDPOINT = 'https://aziz-blr.github.io/latest.json';
+var GCM_ENDPOINT = 'https://android.googleapis.com/gcm/send';
+//var GCM_ENDPOINT = 'https://aziz-blr.github.io/latest.json';
 
 self.addEventListener('push', function(event) {  
   // Since there is no payload data with the first version  
@@ -20,7 +20,7 @@ self.addEventListener('push', function(event) {
     fetch(GCM_ENDPOINT, fetchInit).then(function(res) {
       res.json().then(function(data) {
             // Show notification
-            //console.log(data);
+            console.log(data);
             if (data.data.title == 'no') {
               var title = 'title';
               var message = 'body';  
