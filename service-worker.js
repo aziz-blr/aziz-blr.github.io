@@ -24,7 +24,7 @@ self.addEventListener('push', function(event) {
             if (data.data.title == 'no') {
               var title = 'title';
               var message = 'body';  
-              var icon = 'img/icon.png.png';  
+              var icon = 'https://aziz-blr.github.io/images/icon.png';  
               var notificationTag = 'notification-error';  
               return self.registration.showNotification(title, {  
                 body: message,  
@@ -34,7 +34,7 @@ self.addEventListener('push', function(event) {
             }else{
               var title = data.data.title;
               var message = data.data.body;  
-              var icon = 'img/icon.png.png';  
+              var icon = data.data.icon;  
               var notificationTag = 'notification-error';  
               return self.registration.showNotification(title, {  
                 body: message,  
