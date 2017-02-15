@@ -119,6 +119,7 @@ function subscribe() {
     serviceWorkerRegistration.pushManager.subscribe({userVisibleOnly: true})
       .then(function(subscription) {
         // The subscription was successful
+       
         isPushEnabled = true;
         pushButton.textContent = 'Disable Push Messages';
         pushButton.disabled = false;
@@ -176,7 +177,7 @@ function initialiseState() {
     serviceWorkerRegistration.pushManager.getSubscription()
       .then(function(subscription) {
         // Enable any UI which subscribes / unsubscribes from
-        // push messages.
+        // push messages.        
         var pushButton = document.querySelector('.js-push-button');
         pushButton.disabled = false;
 
