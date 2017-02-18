@@ -121,8 +121,8 @@ function subscribe() {
         // The subscription was successful
         
         var authKey = subscription.toJSON();
-        console.log(authKey.keys.auth);
-        console.log(authKey.keys.p256dh);
+        //console.log(authKey.keys.auth);
+        //console.log(authKey.keys.p256dh);
 
         isPushEnabled = true;
         pushButton.textContent = 'Disable Push Messages';
