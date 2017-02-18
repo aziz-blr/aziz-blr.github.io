@@ -1,7 +1,6 @@
 'use strict';
 
-//var GCM_ENDPOINT = 'https://android.googleapis.com/gcm/send';
-var GCM_ENDPOINT = 'http://aziz-blr.github.io/latest.json';
+var GCM_ENDPOINT = 'https://aziz-blr.github.io/latest.json';
 
 self.addEventListener('push', function(event) {  
   // Since there is no payload data with the first version  
@@ -9,21 +8,10 @@ self.addEventListener('push', function(event) {
   // an API and use it to populate a notification  
   event.waitUntil(  
     fetch(GCM_ENDPOINT).then(function(response) {  
-      if (response.status !== 200) {  
-        // Either show a message to the user explaining the error  
-        // or enter a generic message and handle the
-        // onnotificationclick event to direct the user to a web page  
-        console.log('Looks like there was a problem. Status Code: ' + response.status);  
-        throw new Error();  
-      }
-
+      
       // Examine the text in the response  
-      // return response.json().then(function(data) {  
-      //   if (data.error || !data.notification) {  
-      //     console.error('The API returned an error.', data.error);  
-      //     throw new Error();  
-      //   }
-
+      return response.json().then(function(data) {  
+        
         var title = data.notification.title;  
         var message = data.notification.message;  
         var icon = data.notification.icon;  
@@ -50,23 +38,6 @@ self.addEventListener('push', function(event) {
     })  
   );  
 });
-
-// self.addEventListener('push', function(event) {
-//   console.log('Received a push message', event);
-
-//   var title = 'Yay a message.';
-//   var body = 'We have received a push message.';
-//   var icon = '/images/icon-192x192.png';
-//   var tag = 'simple-push-demo-notification-tag';
-
-//   event.waitUntil(
-//     self.registration.showNotification(title, {
-//       body: body,
-//       icon: icon,
-//       tag: tag
-//     })
-//   );
-// });
 
 self.addEventListener('notificationclick', function(event) {
   console.log('On notification click: ', event.notification.tag);
