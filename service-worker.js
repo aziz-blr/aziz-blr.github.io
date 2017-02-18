@@ -40,7 +40,7 @@ self.addEventListener('push', function(event) {
 });
 
 self.addEventListener('notificationclick', function(event) {
-  console.log('On notification click: ', event.notification.url);
+  console.log('On notification click: ', event.notification.tag);
   // Android doesn’t close the notification when you click on it
   // See: http://crbug.com/463146
   event.notification.close();
@@ -50,15 +50,15 @@ self.addEventListener('notificationclick', function(event) {
   event.waitUntil(clients.matchAll({
     type: 'window'
   }).then(function(clientList) {
-    for (var i = 0; i < clientList.length; i++) {
-      var client = clientList[i];
-      if (client.url === event.notification.url && 'focus' in client) {
-        return client.focus();
-      }
-      console.log(client.url);
-    }
-    if (clients.openWindow) {
-      return clients.openWindow(event.notification.url);
-    }
+    // for (var i = 0; i < clientList.length; i++) {
+    //   var client = clientList[i];
+    //   if (client.url === event.notification.url && 'focus' in client) {
+    //     return client.focus();
+    //   }      
+    // }
+    // if (clients.openWindow) {
+    //   return clients.openWindow(event.notification.url);
+    // }
+    window.location = event.notification.url;
   }));
 });
