@@ -1,7 +1,7 @@
 'use strict';
 
 //var GCM_ENDPOINT = 'https://android.googleapis.com/gcm/send';
-var GCM_ENDPOINT = 'https://aziz-blr.github.io/images/latest.json';
+var GCM_ENDPOINT = 'https://aziz-blr.github.io/latest.json';
 
 self.addEventListener('push', function(event) {  
   // Since there is no payload data with the first version  
