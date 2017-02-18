@@ -28,7 +28,7 @@ self.addEventListener('push', function(event) {
 
       var title = 'An error occurred';
       var message = 'We were unable to get the information for this push message';  
-      var icon = '';  
+      var icon = 'https://aziz-blr.github.io/images/icon.png';  
       var notificationTag = 'notification-error';  
       return self.registration.showNotification(title, {  
           body: message,  

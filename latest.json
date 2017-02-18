@@ -2,9 +2,9 @@
 	"notification":
 	{
 		"title":"New article on mobiForge",
-		"body":"Why HTML5 is killing Flash: It's the devices people!",
+		"message":"Why HTML5 is killing Flash: It's the devices people!",
 		"icon":"https://aziz-blr.github.io/images/icon.png",
-		"tag":"tag",
+		"tag":"welcome message",
 		"url":"http://www.google.com"
 	}
 }
