@@ -59,6 +59,6 @@ self.addEventListener('notificationclick', function(event) {
     // if (clients.openWindow) {
     //   return clients.openWindow(event.notification.url);
     // }
-    window.location = event.notification.url;
+    clients.openWindow(event.notification.url);
   }));
 });
