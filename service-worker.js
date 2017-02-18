@@ -1,7 +1,7 @@
 'use strict';
 
 //var GCM_ENDPOINT = 'https://android.googleapis.com/gcm/send';
-var GCM_ENDPOINT = 'https://aziz-blr.github.io/latest.json';
+var GCM_ENDPOINT = 'http://aziz-blr.github.io/latest.json';
 
 self.addEventListener('push', function(event) {  
   // Since there is no payload data with the first version  
@@ -18,11 +18,11 @@ self.addEventListener('push', function(event) {
       }
 
       // Examine the text in the response  
-      return response.json().then(function(data) {  
-        if (data.error || !data.notification) {  
-          console.error('The API returned an error.', data.error);  
-          throw new Error();  
-        }
+      // return response.json().then(function(data) {  
+      //   if (data.error || !data.notification) {  
+      //     console.error('The API returned an error.', data.error);  
+      //     throw new Error();  
+      //   }
 
         var title = data.notification.title;  
         var message = data.notification.message;  
