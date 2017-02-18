@@ -7,5 +7,6 @@
       }],
   "start_url": "./index.html?homescreen=1",
   "display": "standalone",
-  "gcm_sender_id": "387168200261"
+  "gcm_sender_id": "387168200261",
+  "permissions": [ "gcm","storage","pushMessaging","notifications" ]
 }
