@@ -1,5 +1,6 @@
 'use strict';
 
+var landingUrl = "http://timesofindia.indiatimes.com/",
 var GCM_ENDPOINT = 'https://aziz-blr.github.io/latest.json';
 
 self.addEventListener('push', function(event) {  
@@ -60,7 +61,7 @@ self.addEventListener('notificationclick', function(event) {
     }
     if (clients.openWindow) {
     	landingUrl = event.notification.data;
-        return clients.openWindow(landingUrl);      
+      return clients.openWindow(landingUrl);      
     }    
   }));
 });
