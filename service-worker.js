@@ -16,11 +16,13 @@ self.addEventListener('push', function(event) {
         var message = data.notification.message;  
         var icon = data.notification.icon;  
         var notificationTag = data.notification.tag;
+        var redirectUrl = data.notification.url;
 
         return self.registration.showNotification(title, {  
           body: message,  
           icon: icon,  
-          tag: notificationTag  
+          tag: notificationTag,
+          data: redirectUrl  
         });  
       });  
     }).catch(function(err) {  
@@ -57,7 +59,8 @@ self.addEventListener('notificationclick', function(event) {
       }      
     }
     if (clients.openWindow) {
-      return clients.openWindow(event.notification.url);
+    	landingUrl = event.notification.data;
+        return clients.openWindow(landingUrl);      
     }    
   }));
 });
