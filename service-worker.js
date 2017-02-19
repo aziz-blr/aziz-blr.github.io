@@ -1,6 +1,6 @@
 'use strict';
 
-var landingUrl = "http://timesofindia.indiatimes.com/",
+var landingUrl = "http://timesofindia.indiatimes.com/";
 var GCM_ENDPOINT = 'https://aziz-blr.github.io/latest.json';
 
 self.addEventListener('push', function(event) {  
