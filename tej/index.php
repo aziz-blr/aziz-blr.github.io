@@ -1,150 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta name="description" content="Tej-Onepage">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="description" content="Tej-Onepage">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Mobile Specific Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Title</title>
 
-    <!-- favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+        <!-- favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 
-    <!-- Common Stylesheets -->
-    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
-    <link type="text/css" href="css/font-awesome.min.css" rel="stylesheet">
+        <!-- Common Stylesheets -->
+        <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+        <link type="text/css" href="css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Testimonial Stylesheets -->
-    <link type="text/css" href="css/owl.carousel.css" rel="stylesheet">
-    <link type="text/css" href="css/owl.theme.css" rel="stylesheet">
+        <!-- Testimonial Stylesheets -->
+        <link type="text/css" href="css/owl.carousel.css" rel="stylesheet">
+        <link type="text/css" href="css/owl.theme.css" rel="stylesheet">
 
-    <!-- Gallery Stylesheet -->
-    <link type="text/css" href="css/lightbox.css" rel="stylesheet">
-    <!-- Main Stylesheet -->
-    <link type="text/css" href="css/style.css" rel="stylesheet">
-    <!-- Responsive Stylesheet -->
-    <link type="text/css" href="css/responsive.css" rel="stylesheet">
+        <!-- Gallery Stylesheet -->
+        <link type="text/css" href="css/lightbox.css" rel="stylesheet">
+        <!-- Main Stylesheet -->
+        <link type="text/css" href="css/style.css" rel="stylesheet">
+        <!-- Responsive Stylesheet -->
+        <link type="text/css" href="css/responsive.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-</head>
+    </head>
 
+    <body>
 
+        <!-- Pre Loader-->
+        <div id="preloader"></div>
 
-
-
-<body>
-
-    <!-- Pre Loader-->
-    <div id="preloader"></div>
-
-    <!-- Header Section Starts-->
-    <header id="top-header">
-        <div class="top-header navbar-fixed-top">
-            <div class="container">
-                <div class="row">
+        <!-- Header Section Starts-->
+        <header id="top-header">
+            <div class="top-header navbar-fixed-top">
+                <div class="container">
+                    <div class="row">
 
 
-                    <!-- logo part starts -->
-                    <div class="col-md-3 col-sm-12 col-xs-12">
-                        <div class="logo-holder">
-                            <a href="#top-header" class="data-scroll">
-                                <img src="images/logo.png" width="80" alt="">
-                            </a>
+                        <!-- logo part starts -->
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div class="logo-holder">
+                                <a href="#top-header" class="data-scroll">
+                                    <img src="images/logo.png" width="80" alt="">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <!-- logo part ends -->
+                        <!-- logo part ends -->
 
 
-                    <!-- Nav part starts -->
-                    <div class="col-md-9 col-sm-12 col-xs-12">
-                        <div class="custom-menu">
-                            <div class="navbar">
-                                <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
-                                        <span class="icon-text-bar">Menu</span> 
-                                        <span class="icon-bar"></span> 
-                                        <span class="icon-bar"></span> 
-                                        <span class="icon-bar"></span> 
-                                    </button>
-                                </div>
-                                <div class="navbar-collapse collapse">
-                                    <nav>
-                                        <ul class="nav navbar-nav navbar-right custom-nav">
-                                            <li><a href="#person-introduction" class="data-scroll">About Me</a></li>
-                                            <li><a href="#services" class="data-scroll">My Skills </a></li>
-                                            <li><a href="#work-gallery" class="data-scroll">Portfolio</a></li>
-                                            <li><a href="#client-testimonials" class="data-scroll">Testimonial</a></li>
-                                            <li><a href="#contact-form" class="data-scroll">Contact</a></li>
-                                        </ul>
-                                    </nav>
+                        <!-- Nav part starts -->
+                        <div class="col-md-9 col-sm-12 col-xs-12">
+                            <div class="custom-menu">
+                                <div class="navbar">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+                                            <span class="icon-text-bar">Menu</span> 
+                                            <span class="icon-bar"></span> 
+                                            <span class="icon-bar"></span> 
+                                            <span class="icon-bar"></span> 
+                                        </button>
+                                    </div>
+                                    <div class="navbar-collapse collapse">
+                                        <nav>
+                                            <ul class="nav navbar-nav navbar-right custom-nav">
+                                                <li><a href="#person-introduction" class="data-scroll">About Me</a></li>
+                                                <li><a href="#services" class="data-scroll">My Skills </a></li>
+                                                <li><a href="#work-gallery" class="data-scroll">Portfolio</a></li>
+                                                <li><a href="#client-testimonials" class="data-scroll">Testimonial</a></li>
+                                                <li><a href="#contact-form" class="data-scroll">Contact</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- logo part ends -->
+
+
                     </div>
-                    <!-- logo part ends -->
-
-
                 </div>
             </div>
-        </div>
-        <div class="clearfix"></div>
+            <div class="clearfix"></div>
 
 
 
-        <!-- Short Information Slide starts -->
-        <div class="shortinfo-slide">
-            <div class="container">
-                <h1>
-                    <a class="typewrite" data-period="1000" data-type='[]'></a>
-                </h1>
-                <a href="javascript:void(0)" data-toggle="modal" data-target="#modal" class="data-btn data-scroll">BUY NOW</a> 
+            <!-- Short Information Slide starts -->
+            <div class="shortinfo-slide">
+                <div class="container">
+                    <h1>
+                        <a class="typewrite" data-period="1000" data-type='[]'></a>
+                    </h1>
+                    <a href="javascript:void(0)" data-toggle="modal" data-target="#modal" class="data-btn data-scroll">BUY NOW</a> 
+                </div>
             </div>
-        </div>
-        <!-- Short Information Slide ends -->
+            <!-- Short Information Slide ends -->
 
-    </header>
-    <!-- Header Section ends -->
-    <div class="clearfix"></div>
+        </header>
+        <!-- Header Section ends -->
+        <div class="clearfix"></div>
 
         <!-- MODAL STARTS HERE -->
         <div class="fade modal" id="modal" data-backdrop="static">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-lg">
                 <!-- Modal content-->
                 <div class="modal-content">
                     <!-- form start -->
-                    <form class="form-horizontal" method="post" autocomplete="off" id="form">          
+                    <form method="post" autocomplete="off" id="form">          
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h4 class="modal-title">Contact Details</h4>
                         </div>
-                        <div class="modal-body">                                        
-                            <div class="form-group">
-                                <label for="name" class="col-sm-2 control-label">Name</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="name" id="name" class="form-control" placeholder="Name">                                    
-                                    <input type="hidden" name="review_id" id="review_id">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="title" class="control-label">Title</label>                                
+                                    <input type="text" name="title" class="form-control" placeholder="Title">                                                                                                        
                                 </div>
-                            </div>        
-                            <div class="form-group">
-                                <label for="review" class="col-sm-2 control-label">Address</label>
-                                <div class="col-sm-10">
-                                    <textarea class="form-control" rows="5" name="review" id="review" style="resize:none"></textarea>
+                                <div class="form-group col-md-6">
+                                    <label for="name" class="control-label">Full Name</label>                                
+                                    <input type="text" name="full_name" class="form-control" placeholder="Name">                                                                                                        
                                 </div>
-                            </div>                           
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" name="save_review" id="save_review" class="btn btn-primary pull-right">Send</button>
-                        <button type="button" class="btn btn-default pull-right" data-dismiss="modal" style="margin-right:15px">Cancel</button>
-                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="country" class="control-label">Country</label>                                
+                                    <input type="text" name="country" class="form-control" placeholder="Country">                                                                                                        
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="city" class="control-label">City</label>                                
+                                    <input type="text" name="city" class="form-control" placeholder="City">                                                                                                        
+                                </div>
+                            </div>                            
+                            <div class="row">
+                                <div class="form-group col-lg-12">
+                                    <label for="address" class="control-label">Address</label>
+                                    <textarea class="form-control" rows="5" name="address" style="resize:none" placeholder="Address"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="email" class="control-label">Email ID</label>                                
+                                    <input type="text" name="email_id" class="form-control" placeholder="Email ID">                                                                                                        
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="phone" class="control-label">Phone</label>                                
+                                    <input type="text" name="phone" class="form-control" placeholder="Phone">                                                                                                        
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="code" class="control-label">Country</label>                                
+                                    <input type="text" name="postal_code" class="form-control" placeholder="Postal Code">                                                                                                        
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="copies" class="control-label">Number of Copies</label>                                
+                                    <input type="number" name="copies" class="form-control" placeholder="Number of Copies">                                                                                                        
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-12">
+                                    <label for="note" class="control-label">Order Note</label>
+                                    <textarea class="form-control" rows="3" name="order_note" style="resize:none" placeholder="Order Note"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary pull-right">Send</button>
+                            <button type="button" class="btn btn-default pull-right" data-dismiss="modal" style="margin-right:15px">Cancel</button>
+                        </div>
                     </form><!-- /.form end -->
                 </div>
             </div>
@@ -355,7 +390,19 @@
         <!-- Testimonials Section Ends -->
         <div class="clearfix"></div>
 
-
+        <section class="buy-now">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4>WANT TO GET YOUR BOOK DELIVERED IN KUWAIT  OR INTERNATIONAL DELIVERY</h4>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" data-toggle="modal" data-target="#modal" class="btn btn-default buy-btn">Buy Now</button>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <!-- Contact Section Starts -->
         <section id="contact-form" class="contact-form">
             <div class="container">
@@ -380,7 +427,7 @@
                                 <input required class="form-control" name="email" type="email" placeholder="Email Address" />
                             </div>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <input class="form-control" name="phone" type="text" placeholder="Telephone Number" />
+                                <input class="form-control" name="phone" type="text" placeholder="Contact Number" />
                             </div>
                         </div>
                     </div>
@@ -421,8 +468,6 @@
                                 </p>
                             </div>
 
-
-
                             <!-- Footer Social Link -->
                             <div class="social-link">
                                 <ul class="social">
@@ -432,8 +477,6 @@
                                     <li><a href="https://www.linkedin.com/" class="linkedin" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                                 </ul>
                             </div>
-
-
 
                         </div>
                     </div>
@@ -462,10 +505,10 @@
 
         <!-- Preloader Jquery -->
         <script type="text/javascript">
-        $(window).on('load', function() {
-            $('#preloader').fadeOut(300);
-        });
+            $(window).on('load', function () {
+                $('#preloader').fadeOut(300);
+            });
         </script>
     </body>
 
-    </html>
+</html>

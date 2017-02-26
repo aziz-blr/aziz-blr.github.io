@@ -611,7 +611,25 @@ header .container {
 }
 
 
-
+/*===============================
+	Buy Now Section
+===============================*/
+.buy-now {
+    padding: 10px 0;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: center;
+    background: #ff9000;
+}
+.buy-now h4 {
+	color: #000;
+        line-height: 1.7em !important;
+}
+.buy-btn {		
+	padding: 12px 40px;	
+	font-size: 17px;
+        border-radius: 30px;
+}
 
 /*===============================
 	10. Contact Form Section
