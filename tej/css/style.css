@@ -739,6 +739,9 @@ header .container {
 .main-footer .social li a.googleplus:hover {
 	background-color: #BD3518;
 }
+.main-footer .social li a.instagram:hover {
+	background-color: #FB3958;
+}
 .main-footer .social li a.linkedin:hover {
 	background-color: #007bb7;
 }
