@@ -178,7 +178,7 @@
         /* ------------------------ Bootstrap Parent Modal  --------------------- */
         /* ---------------------------------------------------------------------- */
         TM_loadBSParentModal: function() {
-            var ajaxLoadContent = true;
+            var ajaxLoadContent = false;
             if( ajaxLoadContent ) {
                 $.ajax({
                     url: "ajax-load/bootstrap-parent-modal.html",
@@ -192,7 +192,7 @@
         /* ------------------------------ demo switcher    ---------------------- */
         /* ---------------------------------------------------------------------- */
         TM_demoSwitcher: function() {
-            var showSwitcher = true;
+            var showSwitcher = false;
             var $style_switcher = $('#style-switcher');
             if( !$style_switcher.length && showSwitcher ) {
                 $.ajax({
