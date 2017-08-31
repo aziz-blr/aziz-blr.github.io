@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<title>Recharge</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+	.frame {
+		/*-ms-zoom: 3;
+		-moz-transform: scale(3);
+		-moz-transform-origin: 0 0;
+		-o-transform: scale(3);
+		-o-transform-origin: 0 0;
+		-webkit-transform: scale(3);
+		-webkit-transform-origin: 0 0;   */    
+		width:100%;
+		height: 100vh;
+		border: none;
+	}
+	.container {
+		padding: 10px;     
+	}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+				<ul class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#home">Fresh Dial</a></li>
+					<li><a data-toggle="tab" href="#menu1">My Euro Fone</a></li>
+					<li><a data-toggle="tab" href="#menu2">Itel Biling</a></li>
+				</ul>
+
+				<div class="tab-content">
+					<div id="home" class="tab-pane fade in active">
+						<iframe class="frame" src="http://www.freshdial.com/freshdial" onload="document.getElementById('loadImg').style.display='none';"></iframe>
+					</div>
+					<div id="menu1" class="tab-pane fade">
+						<iframe class="frame" src="http://www.myeurofone.com"></iframe>
+					</div>
+					<div id="menu2" class="tab-pane fade">
+						<iframe class="frame" src="http://191.96.12.41/itelbilling/home/login.jsp"></iframe>
+					</div>
+				</div>
+
+			</div>  		
+		</div>
+	</div>	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
